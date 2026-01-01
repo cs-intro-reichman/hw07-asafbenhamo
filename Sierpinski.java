@@ -41,5 +41,5 @@ public class Sierpinski {
         sierpinski(n - 1, x3, x23, x13, y3, y23, y13);
 
     }
-	}
+	  }
 

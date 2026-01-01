@@ -22,20 +22,15 @@ public class Koch {
 		// Gets n, and draws a Koch snowflake of n edges in the standard canvass.
 		snowFlake(Integer.parseInt(args[0]));
 		*/
-		curve(Integer.parseInt(args[0]),
-              Double.parseDouble(args[1]), Double.parseDouble(args[2]), 
-              Double.parseDouble(args[3]), Double.parseDouble(args[4]));
-		snowFlake(Integer.parseInt(args[0]));
-
+		
 	}
 
 	/** Gets n, x1, y1, x2, y2,
      *  and draws a Koch curve of depth n from (x1,y1) to (x2,y2). */
 	public static void curve(int n, double x1, double y1, double x2, double y2) {
-		StdDraw.line(x1, y1, x2, y2);
-        if (n == 0) {
-            StdDraw.line(x1, y1, x2, y2);
-            return;
+		if (n == 0) {
+        StdDraw.line(x1, y1, x2, y2);     
+        return;
         }
 		else{
         double x_p2 = x1 + (x2 - x1) / 3.0;
